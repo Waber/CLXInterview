@@ -1,0 +1,362 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-22T12:37:54.289Z",
+        "line": 5,
+        "name": "get all pets with status: available",
+        "description": "",
+        "id": "operating-on-pet-store-with-api;get-all-pets-with-status:-available",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2346000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "GET request is made to https://petstore3.swagger.io/api/v3/pet/findByStatus endpoint with status available parameter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore3.swagger.io/api/v3/pet/findByStatus",
+                  "offset": 23
+                },
+                {
+                  "val": "status",
+                  "offset": 90
+                },
+                {
+                  "val": "available",
+                  "offset": 97
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.doAGetCallToEndpointWithParameter(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the request status 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 638000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the list of elements with status available is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 26
+                },
+                {
+                  "val": "available",
+                  "offset": 33
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertThatBodyContainsAskedElements(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestGroup"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-22T12:37:57.340Z",
+        "line": 12,
+        "name": "add a new pet",
+        "description": "",
+        "id": "operating-on-pet-store-with-api;add-a-new-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 704000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "POST request is made to https://petstore3.swagger.io/api/v3/pet endpoint with the body C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore3.swagger.io/api/v3/pet",
+                  "offset": 24
+                },
+                {
+                  "val": "C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+                  "offset": 87
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.doAPostRequestToEndpointWithBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the request status 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the body is as is C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+                  "offset": 18
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertThatBodyIsAsProvided(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestGroup"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-22T12:37:58.177Z",
+        "line": 19,
+        "name": "change the status of a pet to \u0027sold\u0027",
+        "description": "",
+        "id": "operating-on-pet-store-with-api;change-the-status-of-a-pet-to--sold-",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 658000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "POST request is made to https://petstore3.swagger.io/api/v3/pet endpoint with the body C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore3.swagger.io/api/v3/pet",
+                  "offset": 24
+                },
+                {
+                  "val": "C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+                  "offset": 87
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.doAPostRequestToEndpointWithBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 660000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "PUT request is made to https://petstore3.swagger.io/api/v3/pet endpoint with the body C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\changeStatusPetBodyRequest.json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore3.swagger.io/api/v3/pet",
+                  "offset": 23
+                },
+                {
+                  "val": "C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\changeStatusPetBodyRequest.json",
+                  "offset": 86
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.doAPutRequestToEndpointWithBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the request status 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "field status has value sold",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 6
+                },
+                {
+                  "val": "sold",
+                  "offset": 23
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertThatFieldInBodyContainsProvidedValue(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestGroup"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-22T12:37:59.507Z",
+        "line": 27,
+        "name": "delete an existing pet",
+        "description": "",
+        "id": "operating-on-pet-store-with-api;delete-an-existing-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 650000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "POST request is made to https://petstore3.swagger.io/api/v3/pet endpoint with the body C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore3.swagger.io/api/v3/pet",
+                  "offset": 24
+                },
+                {
+                  "val": "C:\\Testy\\CLXInterview\\src\\main\\resources\\jsons\\newPetBodyRequest.json",
+                  "offset": 87
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.doAPostRequestToEndpointWithBody(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 660000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "DELETE request to https://petstore3.swagger.io/api/v3/pet/6541 is made",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore3.swagger.io/api/v3/pet/6541",
+                  "offset": 18
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.doADeleteRequest(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the request status 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 675000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "GET request to https://petstore3.swagger.io/api/v3/pet/6541 returns code 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://petstore3.swagger.io/api/v3/pet/6541",
+                  "offset": 15
+                },
+                {
+                  "val": "404",
+                  "offset": 73
+                }
+              ],
+              "location": "cucumberService.definitions.CucumberTestDefinitions.assertThatRequestReturnsProperCode(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestGroup"
+          }
+        ]
+      }
+    ],
+    "name": "Operating on pet store with API",
+    "description": "  Users should be able to submit GET, POST, PUT and DELETE requests to a web service",
+    "id": "operating-on-pet-store-with-api",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/featureFiles/bcknd-test.feature",
+    "tags": []
+  }
+]
