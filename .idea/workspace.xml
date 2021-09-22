@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5f10870-bb73-4f83-86d6-2c90d56f914a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cucumberService/definitions/CucumberTestDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cucumberService/definitions/CucumberTestDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cucumberService/runner/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cucumberService/runner/CucumberRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/featureFiles/bcknd-test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/featureFiles/bcknd-test.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cucumberService/definitions/CucumberTestDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cucumberService/definitions/CucumberTestDefinitions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cucumberService/runner/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cucumberService/runner/CucumberRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/featureFiles/bcknd-test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/featureFiles/bcknd-test.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reports/cucumber/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/cucumber/cucumber.json" afterDir="false" />
-    </list>
+    <list default="true" id="e5f10870-bb73-4f83-86d6-2c90d56f914a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -240,8 +228,16 @@
       <workItem from="1626170481846" duration="5897000" />
       <workItem from="1628590588516" duration="3994000" />
       <workItem from="1631627440586" duration="4136000" />
-      <workItem from="1632296109436" duration="19031000" />
+      <workItem from="1632296109436" duration="19713000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1632318997795</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632318997795</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +254,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
