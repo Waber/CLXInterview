@@ -35,13 +35,14 @@ public class CucumberTestDefinitions extends TestBase {
     @And("the list of elements with {word} {word} is displayed")
     public void assertThatBodyContainsAskedElements(String queryParameterNames, String queryParameterValue) {
         List<String> statusList = response.jsonPath().getList(queryParameterNames);
-        statusList.forEach(element -> assertThat(element).isEqualTo(queryParameterValue));
+        for (String status : statusList) {
+            assertThat(status).isEqualTo(queryParameterValue);
+        }
     }
 
     @When("POST request is made to {word} endpoint with the body {word}")
     public void doAPostRequestToEndpointWithBody(String httpPath, String body) {
         response = given()
-                // .body(FileHelper.readFile(body))
                 .body(FileHelper.reader(body))
                 .when()
                 .post(httpPath);

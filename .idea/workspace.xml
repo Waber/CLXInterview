@@ -5,28 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5f10870-bb73-4f83-86d6-2c90d56f914a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiConfig/Endpoints.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiConfig/FootballApiConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiConfig/restAssuredConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiConfig/restAssuredConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiData/Categories.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiData/Jsons.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiData/Options.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiData/Parent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiService/ApiConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiService/ApiDataService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testBase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testBase/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/GPathJsonTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/getMethods/CategoriesTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/getMethods/CategoryByIdTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/getMethods/ParametersSupportedByCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/postMethods/PostContactTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/putMethods/putContactTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/schemaValidation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/categoriesSchema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/AllegroTask.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cucumberService/definitions/CucumberTestDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cucumberService/definitions/CucumberTestDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cucumberService/runner/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cucumberService/runner/CucumberRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/featureFiles/bcknd-test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/featureFiles/bcknd-test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cucumberService/definitions/CucumberTestDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cucumberService/definitions/CucumberTestDefinitions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cucumberService/runner/CucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cucumberService/runner/CucumberRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/featureFiles/bcknd-test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/featureFiles/bcknd-test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/reports/cucumber/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/reports/cucumber/cucumber.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +73,7 @@
       <recent name="C:\Users\przemyslaw.waberski\IdeaProjects\AllegroRestApiTest\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CucumberRunner">
+  <component name="RunManager" selected="Cucumber Java.Feature: bcknd-test">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -92,6 +81,25 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: bcknd-test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/featureFiles/bcknd-test.feature" />
+      <option name="GLUE" value="cucumberService.definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CLXInterview" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: bcknd-test" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,15 +144,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: get all pets with status: available" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: delete an existing pet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/featureFiles/bcknd-test.feature" />
       <option name="GLUE" value="cucumberService.definitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CLXInterview" />
-      <option name="NAME_FILTER" value="^get all pets with status\: available$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^get all pets with status\: available$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: get all pets with status: available" />
+      <option name="NAME_FILTER" value="^delete an existing pet$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^delete an existing pet$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: delete an existing pet" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -199,39 +207,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GPathJsonTests.extractCategoryClassThroughJsonPathTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AllegroRestApiTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GPathJsonTests" />
-      <option name="METHOD_NAME" value="extractCategoryClassThroughJsonPathTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.CategoriesTests.weatherTest" />
-      <item itemvalue="TestNG.GPathJsonTests.extractCategoryClassThroughJsonPathTest" />
       <item itemvalue="TestNG.CucumberRunner" />
       <item itemvalue="Cucumber Java.Scenario: add a new pet" />
       <item itemvalue="Cucumber Java.Scenario: change the status of a pet to 'sold'" />
-      <item itemvalue="Cucumber Java.Scenario: get all pets with status: available" />
+      <item itemvalue="Cucumber Java.Scenario: delete an existing pet" />
+      <item itemvalue="Cucumber Java.Feature: bcknd-test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: bcknd-test" />
         <item itemvalue="TestNG.CucumberRunner" />
+        <item itemvalue="Cucumber Java.Scenario: delete an existing pet" />
         <item itemvalue="Cucumber Java.Scenario: change the status of a pet to 'sold'" />
         <item itemvalue="Cucumber Java.Scenario: add a new pet" />
-        <item itemvalue="Cucumber Java.Scenario: get all pets with status: available" />
-        <item itemvalue="TestNG.GPathJsonTests.extractCategoryClassThroughJsonPathTest" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +240,7 @@
       <workItem from="1626170481846" duration="5897000" />
       <workItem from="1628590588516" duration="3994000" />
       <workItem from="1631627440586" duration="4136000" />
-      <workItem from="1632296109436" duration="14408000" />
+      <workItem from="1632296109436" duration="19031000" />
     </task>
     <servers />
   </component>

@@ -10,7 +10,6 @@ import io.cucumber.testng.CucumberOptions;
         },
         monochrome = true,
         glue = {"classpath:cucumberService/definitions"},
-        tags = "@TestGroup",
         features = {"src/main/resources/featureFiles"}
 
 )
